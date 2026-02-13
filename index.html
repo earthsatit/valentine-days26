@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Happy Valentine's Day 💌</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Falling Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Envelope Scene -->
+    <div class="envelope-scene" id="envelopeScene">
+        <div class="envelope-wrapper">
+            <svg class="envelope-svg" viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Envelope shadow -->
+                <ellipse cx="210" cy="310" rx="180" ry="10" class="envelope-shadow" />
+                <!-- Envelope body -->
+                <rect x="20" y="80" width="380" height="220" rx="12" class="envelope-body" stroke="#f0c8b8"
+                    stroke-width="1.5" />
+                <!-- Stripes -->
+                <rect x="20" y="80" width="380" height="8" rx="4" class="envelope-stripe" opacity="0.5" />
+                <rect x="20" y="292" width="380" height="8" rx="4" class="envelope-stripe" opacity="0.5" />
+                <!-- Inner flap -->
+                <path d="M20 90 L210 210 L400 90" class="envelope-flap-inner" opacity="0.5" />
+                <!-- Envelope flap (top) -->
+                <path d="M22 80 L210 195 L398 80 Q400 78 398 80 L22 80 Q20 78 22 80Z" class="envelope-flap"
+                    stroke="#f0c8b8" stroke-width="1" />
+                <!-- Seal -->
+                <circle cx="210" cy="185" r="26" class="envelope-seal" />
+                <circle cx="204" cy="179" r="8" class="envelope-seal-shine" />
+                <!-- Heart on seal -->
+                <path
+                    d="M210 178 C210 174, 204 170, 200 174 C196 178, 200 184, 210 192 C220 184, 224 178, 220 174 C216 170, 210 174, 210 178Z"
+                    fill="white" opacity="0.9" />
+            </svg>
+
+            <!-- Heart Button -->
+            <button class="heart-btn" id="openBtn" aria-label="เปิดซองจดหมาย">
+                <svg class="heart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+                 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                 C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                 c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                <span class="btn-text">แตะเพื่อเปิด</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-section" id="gallerySection">
+        <h1 class="gallery-title">Happy Valentine's Day 2026 💕</h1>
+
+        <div class="gallery-grid">
+
+            <!-- Replace src with your own images -->
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo1.jpg" alt="Photo 1"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 1</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo2.jpg" alt="Photo 2"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 2</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo3.jpg" alt="Photo 3"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 3</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo4.jpg" alt="Photo 4"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 4</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo5.jpg" alt="Photo 5"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 5</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo6.jpg" alt="Photo 6"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 5</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo7.jpg" alt="Photo 7"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 5</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo8.jpg" alt="Photo 8"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 5</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo9.jpg" alt="Photo 9"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 5</span></div>'">
+            </div>
+            <div class="photo-card" onclick="openLightbox(this)">
+                <img src="img/photo10.jpg" alt="Photo 10"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>📸<span>Photo 5</span></div>'">
+            </div>
+        </div>
+
+        <div class="love-message">
+            <p>ยักนะ เดี๋ยวให้ 2 นาที 💗</p>
+            <p class="small">— Forever & Always —</p>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+        <button class="lightbox-arrow lightbox-prev" onclick="navigateLightbox(event, -1)">‹</button>
+        <img id="lightboxImg" src="" alt="Full photo">
+        <button class="lightbox-arrow lightbox-next" onclick="navigateLightbox(event, 1)">›</button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <script>
+        // ===== Falling Hearts =====
+        const heartsContainer = document.getElementById('heartsContainer');
+        const heartChars = ['♥', '♡', '❤', '💕', '💗', '❣'];
+
+        function createFallingHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'falling-heart';
+            heart.textContent = heartChars[Math.floor(Math.random() * heartChars.length)];
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.fontSize = (Math.random() * 18 + 10) + 'px';
+            heart.style.animationDuration = (Math.random() * 6 + 6) + 's';
+            heart.style.animationDelay = (Math.random() * 2) + 's';
+            heart.style.opacity = Math.random() * 0.25 + 0.08;
+            heartsContainer.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 14000);
+        }
+
+        // Start hearts immediately
+        for (let i = 0; i < 15; i++) {
+            setTimeout(createFallingHeart, i * 200);
+        }
+        setInterval(createFallingHeart, 400);
+
+        // ===== Envelope Open =====
+        const openBtn = document.getElementById('openBtn');
+        const envelopeScene = document.getElementById('envelopeScene');
+        const gallerySection = document.getElementById('gallerySection');
+
+        openBtn.addEventListener('click', (e) => {
+            // Sparkle burst
+            for (let i = 0; i < 12; i++) {
+                createSparkle(e.clientX, e.clientY);
+            }
+
+            envelopeScene.classList.add('hidden');
+            setTimeout(() => {
+                gallerySection.classList.add('visible');
+            }, 400);
+        });
+
+        // ===== Sparkle Effect =====
+        function createSparkle(x, y) {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.textContent = ['✦', '♥', '✧', '❤', '💖', '✨'][Math.floor(Math.random() * 6)];
+            sparkle.style.left = x + 'px';
+            sparkle.style.top = y + 'px';
+            sparkle.style.color = ['#ff4d94', '#ff8fbf', '#ffd700', '#ff6b9d', '#ff69b4'][Math.floor(Math.random() * 5)];
+            const angle = Math.random() * Math.PI * 2;
+            const dist = Math.random() * 100 + 40;
+            sparkle.style.setProperty('--tx', Math.cos(angle) * dist + 'px');
+            sparkle.style.setProperty('--ty', Math.sin(angle) * dist + 'px');
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 800);
+        }
+
+        // ===== Lightbox =====
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxCounter = document.getElementById('lightboxCounter');
+        let currentIndex = 0;
+        let allImages = [];
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function collectImages() {
+            allImages = [];
+            document.querySelectorAll('.photo-card').forEach((card, i) => {
+                const img = card.querySelector('img');
+                if (img && img.src) {
+                    allImages.push({ src: img.src, index: i });
+                }
+            });
+        }
+
+        function openLightbox(card) {
+            collectImages();
+            const img = card.querySelector('img');
+            if (!img) return;
+
+            const clickedSrc = img.src;
+            currentIndex = allImages.findIndex(item => item.src === clickedSrc);
+            if (currentIndex === -1) currentIndex = 0;
+
+            showCurrentImage();
+            lightbox.classList.add('active');
+        }
+
+        function showCurrentImage() {
+            if (allImages.length === 0) return;
+            lightboxImg.src = allImages[currentIndex].src;
+            lightboxCounter.textContent = (currentIndex + 1) + ' / ' + allImages.length;
+
+            // Reset scale animation
+            lightboxImg.style.transform = 'scale(0.85)';
+            requestAnimationFrame(() => {
+                lightboxImg.style.transform = '';
+            });
+        }
+
+        function navigateLightbox(e, dir) {
+            e.stopPropagation();
+            currentIndex = (currentIndex + dir + allImages.length) % allImages.length;
+            showCurrentImage();
+        }
+
+        function closeLightbox(e) {
+            if (e && e.target !== lightbox && e.target !== document.querySelector('.lightbox-close')) return;
+            lightbox.classList.remove('active');
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') lightbox.classList.remove('active');
+            if (e.key === 'ArrowLeft') navigateLightbox(e, -1);
+            if (e.key === 'ArrowRight') navigateLightbox(e, 1);
+        });
+
+        // Swipe support for mobile
+        lightbox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        lightbox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+                navigateLightbox(e, diff > 0 ? 1 : -1);
+            }
+        }, { passive: true });
+    </script>
+</body>
+
+</html>
